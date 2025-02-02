@@ -184,9 +184,9 @@ private fun MainScreen() {
                 }
 
                 if (!checked.value) {
-                    Text("Gen \t PriCell/SecCell \t Band(BandWidth) \t CellId")
+                    Text("Gen \t (Pri|Sec)Cell \t Band/BandWidth \t PCI")
                     latestPhysicalChannelConfigLogList.value.forEach {
-                        Text("${it.mNetworkType} \t ${it.mConnectionStatus} \t ${it.mBand} (${it.mCellBandwidthDownlinkKhz}) \t ${it.mPhysicalCellId}")
+                        Text("${it.mNetworkType} \t ${it.mConnectionStatus} \t ${it.mBand}/${it.mCellBandwidthDownlinkKhz} \t ${it.mPhysicalCellId}")
                     }
                 } else {
                     latestPhysicalChannelConfigLogList.value.forEach {
