@@ -108,7 +108,7 @@ private fun MainScreen() {
                         } ?: emptyList()
                     }
 
-                    Build.VERSION.SDK_INT <= Build.VERSION_CODES.VANILLA_ICE_CREAM -> {
+                    else -> {
                         // Android 15 以降。一個間に挟まった
 
                         // ログから正規表現で取り出す
